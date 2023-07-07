@@ -1,4 +1,4 @@
-** C Generic Vector
+## C Generic Vector
 I made this for fun. 
 
 Look inside of main.c to how it works. Check out vector.h in includes dir to see the methods.
