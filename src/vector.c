@@ -33,7 +33,7 @@ void vec_expand(Vec* vec) {
     
     void* result = realloc(vec->array, vec->element_size * vec->length);
     if (result == NULL) {
-        printf("ERROR: Unable to REALLOC mem to expand vec!\n");
+        printf("ERROR: Unable to REALLOC mem to EXPAND vec!\n");
         exit(1);
     }
 }
@@ -50,7 +50,7 @@ void vec_reduce(Vec *vec, int new_length) {
     vec->length = new_length;
     void* result = realloc(vec->array, vec->element_size * vec->length);
     if (result == NULL) {
-        printf("ERROR: Unable to REALLOC mem to decrease vec!\n");
+        printf("ERROR: Unable to REALLOC mem to REDUCE vec!\n");
         exit(1);
     }
 }

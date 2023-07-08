@@ -24,4 +24,4 @@ void vec_pop_at(Vec* vec, int index);
 void* vec_at(Vec* vec, int index);
 void vec_free(Vec* vec);
 
-#endif /* AFF987B5_5DF9_42A4_BB43_A85BB0B05D19 */
+#endif
