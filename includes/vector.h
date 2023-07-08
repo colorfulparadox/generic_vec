@@ -1,11 +1,10 @@
-#ifndef AFF987B5_5DF9_42A4_BB43_A85BB0B05D19
-#define AFF987B5_5DF9_42A4_BB43_A85BB0B05D19
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#pragma once
+#ifndef _VECTOR_HEADER_
+#define _VECTOR_HEADER_
 
 #define VEC_GROW_SIZE 10
+
+#include <stddef.h>
 
 typedef struct Vec {
     int length;

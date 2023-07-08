@@ -1,5 +1,9 @@
 #include "../includes/vector.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 Vec vec_new(int init_size, size_t element_size) {
     Vec vec;
     vec.length = init_size;
