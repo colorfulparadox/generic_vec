@@ -15,6 +15,8 @@ IF "%1"=="build" (
     target\main.exe
 
     pause
+
+    cls
     
 ) ELSE IF "%1"=="clean" (
     IF EXIST target (
