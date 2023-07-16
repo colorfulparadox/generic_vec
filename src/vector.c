@@ -1,9 +1,5 @@
 #include "../includes/vector.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 Vec vec_new(int init_size, size_t element_size) {
     Vec vec;
     vec.length = init_size;
@@ -86,6 +82,16 @@ void* vec_at(Vec* vec, int index) {
         return NULL;
     }
     return (void*)((char*)vec->array + index * vec->element_size);
+}
+
+bool vec_contains(Vec* vec, void* item) {
+    for(int index = 0; index < vec->capacity; index++) {
+        void* at = (void*)((char*)vec->array + index * vec->element_size);
+        if (at == item) {
+            return true;
+        }
+    }
+    return false;
 }
 
 void vec_free(Vec* vec) {

@@ -82,6 +82,7 @@ int main() {
 
     Item* a = (Item*)vec_at(&item_vec, 0);
     a->stock -= 1;
+
     vec_pop_at(&item_vec, 1);
 
     print_item_vec(&item_vec);

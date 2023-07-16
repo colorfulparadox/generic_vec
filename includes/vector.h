@@ -5,6 +5,10 @@
 #define VEC_GROW_SIZE 10
 
 #include <stddef.h>
+#include<stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 typedef struct Vec {
     int length;
@@ -22,6 +26,8 @@ void vec_reduce(Vec *vec, int new_length);
 void vec_pop_back(Vec* vec);
 void vec_pop_at(Vec* vec, int index);
 void* vec_at(Vec* vec, int index);
+bool vec_contains(Vec* vec, void* item);
+
 void vec_free(Vec* vec);
 
 #endif
